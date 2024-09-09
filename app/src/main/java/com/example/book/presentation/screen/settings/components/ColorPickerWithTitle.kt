@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.components
+package com.example.book.presentation.screen.settings.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -26,13 +26,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.book.presentation.screen.settings.components.SliderWithTitle
+import com.example.book.R
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.components.custom.CustomIconButton
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.debounce
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.components.CustomIconButton
+
 
 /**
  * Color picker with title.

@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings
+package com.example.book.presentation.screen.settings.nested.appearance.components.settings
 
 import androidx.compose.foundation.lazy.LazyItemScope
 import androidx.compose.material3.MaterialTheme
@@ -10,17 +10,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.ButtonItem
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.data.model.ButtonItem
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
 import com.example.book.presentation.screen.settings.components.SegmentedButtonWithTitle
-import ua.acclorite.book_story.presentation.ui.BookStoryTheme
-import ua.acclorite.book_story.presentation.ui.SlidingTransition
-import ua.acclorite.book_story.presentation.ui.Theme
-import ua.acclorite.book_story.presentation.ui.ThemeContrast
-import ua.acclorite.book_story.presentation.ui.isDark
-import ua.acclorite.book_story.presentation.ui.isPureDark
+import com.example.book.ui.theme.BookStoryTheme
+import com.example.book.ui.theme.SlidingTransition
+import com.example.book.ui.theme.Theme
+import com.example.book.ui.theme.ThemeContrast
+import com.example.book.ui.theme.isDark
+import com.example.book.ui.theme.isPureDark
+
 
 /**
  * Theme Contrast setting.

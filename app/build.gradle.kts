@@ -108,6 +108,10 @@ dependencies {
 
     // Coil for loading bitmaps
     implementation("io.coil-kt:coil-compose:2.7.0")
+
+    // Drag & Drop
+    implementation("sh.calvin.reorderable:reorderable:2.3.0")
+    implementation(kotlin("script-runtime"))
     
     
 

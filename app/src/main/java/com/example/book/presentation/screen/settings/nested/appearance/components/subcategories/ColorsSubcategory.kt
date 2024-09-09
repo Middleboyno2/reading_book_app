@@ -1,6 +1,6 @@
 @file:Suppress("FunctionName")
 
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories
+package com.example.book.presentation.screen.settings.nested.appearance.components.subcategories
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -15,14 +15,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.coerceAtLeast
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 import com.example.book.presentation.screen.settings.data.SettingsState
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.ColorPresetSetting
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.FastColorPresetChangeSetting
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.ColorPresetSetting
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.FastColorPresetChangeSetting
 
 /**
  * Colors subcategory.

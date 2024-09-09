@@ -1,6 +1,6 @@
 @file:Suppress("FunctionName")
 
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components
+package com.example.book.presentation.screen.settings.nested.appearance.components
 
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.material3.MaterialTheme
@@ -9,11 +9,12 @@ import androidx.compose.runtime.State
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 import com.example.book.presentation.screen.settings.data.SettingsState
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories.ColorsSubcategory
+import com.example.book.presentation.screen.settings.nested.appearance.components.subcategories.ColorsSubcategory
 import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories.ThemePreferencesSubcategory
 
 /**

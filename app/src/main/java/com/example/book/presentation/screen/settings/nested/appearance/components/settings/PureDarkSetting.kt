@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings
+package com.example.book.presentation.screen.settings.nested.appearance.components.settings
 
 import androidx.compose.foundation.lazy.LazyItemScope
 import androidx.compose.material3.MaterialTheme
@@ -6,14 +6,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.ButtonItem
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.data.model.ButtonItem
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
 import com.example.book.presentation.screen.settings.components.SegmentedButtonWithTitle
-import ua.acclorite.book_story.presentation.ui.PureDark
-import ua.acclorite.book_story.presentation.ui.SlidingTransition
-import ua.acclorite.book_story.presentation.ui.isDark
+import com.example.book.ui.theme.PureDark
+import com.example.book.ui.theme.SlidingTransition
+import com.example.book.ui.theme.isDark
+
 
 /**
  * Pure Dark setting.

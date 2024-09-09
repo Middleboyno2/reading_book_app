@@ -62,7 +62,7 @@ fun CustomBottomSheet(
             },
             shape = shape,
             sheetState = rememberModalBottomSheetState(true),
-            windowInsets = WindowInsets(0, 0, 0, 0),
+            contentWindowInsets = {WindowInsets(0, 0, 0, 0)},
             containerColor = containerColor
         ) {
             content(navigationBarPadding)

@@ -15,14 +15,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.coerceAtLeast
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.DarkThemeSetting
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.PureDarkSetting
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.ThemeContrastSetting
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings.ThemeSetting
+import com.example.book.R
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.DarkThemeSetting
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.PureDarkSetting
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.ThemeContrastSetting
+import com.example.book.presentation.screen.settings.nested.appearance.components.settings.ThemeSetting
 
 /**
  * Theme Preferences subcategory.

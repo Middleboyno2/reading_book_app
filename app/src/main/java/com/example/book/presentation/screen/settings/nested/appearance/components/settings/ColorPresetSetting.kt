@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings
+package com.example.book.presentation.screen.settings.nested.appearance.components.settings
 
 import android.content.Context
 import androidx.compose.animation.animateColorAsState
@@ -52,24 +52,25 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.example.book.R
+import com.example.book.data.model.ColorPreset
+import com.example.book.data.util.Selected
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.CustomIconButton
+import com.example.book.presentation.components.custom.customItemsIndexed
+import com.example.book.presentation.screen.settings.data.SettingsEvent
+import com.example.book.presentation.screen.settings.data.SettingsState
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.debounce
 import sh.calvin.reorderable.ReorderableCollectionItemScope
 import sh.calvin.reorderable.ReorderableItem
 import sh.calvin.reorderable.rememberReorderableLazyListState
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.ColorPreset
-import ua.acclorite.book_story.domain.util.Selected
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.customItemsIndexed
-import ua.acclorite.book_story.presentation.screens.settings.components.ColorPickerWithTitle
-import com.example.book.presentation.screen.settings.data.SettingsEvent
-import com.example.book.presentation.screen.settings.data.SettingsState
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
-import ua.acclorite.book_story.presentation.ui.Transitions
+import com.example.book.presentation.screen.settings.components.ColorPickerWithTitle
+import com.example.book.ui.theme.DefaultTransition
+import com.example.book.ui.theme.Transitions
+
 
 /**
  * Color Preset setting.

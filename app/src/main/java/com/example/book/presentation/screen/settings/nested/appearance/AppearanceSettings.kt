@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance
+package com.example.book.presentation.screen.settings.nested.appearance
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,18 +20,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.GoBackButton
-import ua.acclorite.book_story.presentation.components.collapsibleUntilExitScrollBehaviorWithLazyListState
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.GoBackButton
+import com.example.book.presentation.components.custom.collapsibleUntilExitScrollBehaviorWithLazyListState
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.main.MainViewModel
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 import com.example.book.presentation.screen.settings.data.SettingsState
 import com.example.book.presentation.screen.settings.data.SettingsViewModel
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.AppearanceSettingsCategory
+import com.example.book.presentation.screen.settings.nested.appearance.components.AppearanceSettingsCategory
 
 @Composable
 fun AppearanceSettingsRoot() {

@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.settings
+package com.example.book.presentation.screen.settings.nested.appearance.components.settings
 
 import android.os.Build
 import androidx.compose.animation.core.tween
@@ -38,19 +38,20 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.Constants
-import ua.acclorite.book_story.domain.util.UIText
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.customItemsIndexed
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
-import ua.acclorite.book_story.presentation.ui.Theme
-import ua.acclorite.book_story.presentation.ui.ThemeContrast
-import ua.acclorite.book_story.presentation.ui.animatedColorScheme
-import ua.acclorite.book_story.presentation.ui.isDark
-import ua.acclorite.book_story.presentation.ui.isPureDark
+import com.example.book.R
+import com.example.book.data.util.Constants
+import com.example.book.data.util.UIText
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.customItemsIndexed
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+import com.example.book.ui.theme.Theme
+import com.example.book.ui.theme.ThemeContrast
+import com.example.book.ui.theme.animatedColorScheme
+import com.example.book.ui.theme.isDark
+import com.example.book.ui.theme.isPureDark
+
 
 /**
  * Theme setting.
