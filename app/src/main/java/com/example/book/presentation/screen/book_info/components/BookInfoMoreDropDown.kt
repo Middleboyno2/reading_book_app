@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.book_info.components
+package com.example.book.presentation.screen.book_info.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.material.icons.Icons
@@ -17,9 +17,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CustomDropDownMenuItem
-import ua.acclorite.book_story.presentation.components.CustomIconButton
+import com.example.book.R
+import com.example.book.presentation.components.custom.CustomDropDownMenuItem
+import com.example.book.presentation.components.custom.CustomIconButton
+
 import com.example.book.presentation.screen.book_info.data.BookInfoEvent
 import com.example.book.presentation.screen.book_info.data.BookInfoState
 

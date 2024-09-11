@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.adding_dialog
+package com.example.book.presentation.screen.browse.components.adding_dialog
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -19,10 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.NullableBook
-import ua.acclorite.book_story.domain.util.Selected
-import ua.acclorite.book_story.presentation.components.CustomCheckbox
+import com.example.book.R
+import com.example.book.data.model.NullableBook
+import com.example.book.data.util.Selected
+import com.example.book.presentation.components.custom.CustomCheckbox
+
 
 /**
  * Adding dialog item.

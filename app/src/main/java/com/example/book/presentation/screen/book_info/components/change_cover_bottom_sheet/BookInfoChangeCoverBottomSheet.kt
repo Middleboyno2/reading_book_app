@@ -9,6 +9,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.HideImage
+import androidx.compose.material.icons.filled.ImageSearch
+import androidx.compose.material.icons.filled.Restore
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -17,7 +20,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-
+import com.example.book.R
+import com.example.book.presentation.components.custom.CustomBottomSheet
+import com.example.book.presentation.screen.book_info.data.BookInfoEvent
+import com.example.book.presentation.screen.book_info.data.BookInfoState
+import com.example.book.presentation.screen.history.data.HistoryEvent
+import com.example.book.presentation.screen.library.data.LibraryEvent
 
 
 /**

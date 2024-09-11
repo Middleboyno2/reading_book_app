@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout.list
+package com.example.book.presentation.screen.browse.components.layout.list
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,9 +8,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.screens.browse.components.layout.BrowseItem
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.components.custom.customItems
+
+import com.example.book.presentation.screen.browse.components.layout.BrowseItem
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseLayout
 

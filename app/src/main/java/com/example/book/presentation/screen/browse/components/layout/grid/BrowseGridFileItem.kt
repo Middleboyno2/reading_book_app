@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout.grid
+package com.example.book.presentation.screen.browse.components.layout.grid
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
@@ -20,13 +20,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.components.CustomCheckbox
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
+import com.example.book.R
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.components.custom.CustomCheckbox
+import com.example.book.ui.theme.DefaultTransition
+
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

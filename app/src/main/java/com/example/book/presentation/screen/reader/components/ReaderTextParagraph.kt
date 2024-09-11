@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components
+package com.example.book.presentation.screen.reader.components
 
 import android.content.Context
 import android.widget.Toast
@@ -22,8 +22,9 @@ import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.FontWithName
+import com.example.book.R
+import com.example.book.data.model.FontWithName
+
 import com.example.book.presentation.screen.reader.data.ReaderEvent
 import com.example.book.presentation.screen.settings.nested.reader.data.ReaderTextAlignment
 

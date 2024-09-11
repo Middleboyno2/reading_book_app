@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterialApi::class)
 
-package ua.acclorite.book_story.presentation.screens.library
+package com.example.book.presentation.screen.library
 
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -42,32 +42,34 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.book.R
+import com.example.book.data.model.Book
+import com.example.book.data.model.Category
+import com.example.book.data.util.OnNavigate
+import com.example.book.data.util.Selected
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.components.custom.header
+import com.example.book.presentation.components.is_messages.IsEmpty
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.Screen
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.Book
-import ua.acclorite.book_story.domain.model.Category
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.domain.util.Selected
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.components.header
-import ua.acclorite.book_story.presentation.components.is_messages.IsEmpty
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.Screen
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseViewModel
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.history.data.HistoryViewModel
-import ua.acclorite.book_story.presentation.screens.library.components.LibraryBookItem
-import ua.acclorite.book_story.presentation.screens.library.components.LibraryTopBar
+import com.example.book.presentation.screen.library.components.LibraryBookItem
+import com.example.book.presentation.screen.library.components.LibraryTopBar
 import com.example.book.presentation.screen.library.components.dialog.LibraryDeleteDialog
-import ua.acclorite.book_story.presentation.screens.library.components.dialog.LibraryMoveDialog
+import com.example.book.presentation.screen.library.components.dialog.LibraryMoveDialog
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryState
 import com.example.book.presentation.screen.library.data.LibraryViewModel
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
-import ua.acclorite.book_story.presentation.ui.Transitions
+import com.example.book.ui.theme.DefaultTransition
+import com.example.book.ui.theme.Transitions
+
 
 @Composable
 fun LibraryScreenRoot() {

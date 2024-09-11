@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.book_info
+package com.example.book.presentation.screen.book_info
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.expandHorizontally
@@ -46,22 +46,23 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.CustomSnackbar
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.Screen
-import ua.acclorite.book_story.presentation.screens.book_info.components.BookInfoBackground
-import ua.acclorite.book_story.presentation.screens.book_info.components.BookInfoDescriptionSection
-import ua.acclorite.book_story.presentation.screens.book_info.components.BookInfoInfoSection
-import ua.acclorite.book_story.presentation.screens.book_info.components.BookInfoStatisticSection
-import ua.acclorite.book_story.presentation.screens.book_info.components.BookInfoTopBar
+import com.example.book.R
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.CustomSnackbar
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.Screen
+
+import com.example.book.presentation.screen.book_info.components.BookInfoBackground
+import com.example.book.presentation.screen.book_info.components.BookInfoDescriptionSection
+import com.example.book.presentation.screen.book_info.components.BookInfoInfoSection
+import com.example.book.presentation.screen.book_info.components.BookInfoStatisticSection
+
 import com.example.book.presentation.screen.book_info.components.change_cover_bottom_sheet.BookInfoChangeCoverBottomSheet
-import ua.acclorite.book_story.presentation.screens.book_info.components.confirm_update_dialog.BookInfoConfirmUpdateDialog
-import ua.acclorite.book_story.presentation.screens.book_info.components.details_bottom_sheet.BookInfoDetailsBottomSheet
-import ua.acclorite.book_story.presentation.screens.book_info.components.dialog.BookInfoDeleteDialog
-import ua.acclorite.book_story.presentation.screens.book_info.components.dialog.BookInfoMoveDialog
+import com.example.book.presentation.screen.book_info.components.confirm_update_dialog.BookInfoConfirmUpdateDialog
+import com.example.book.presentation.screen.book_info.components.details_bottom_sheet.BookInfoDetailsBottomSheet
+import com.example.book.presentation.screen.book_info.components.dialog.BookInfoDeleteDialog
+import com.example.book.presentation.screen.book_info.components.dialog.BookInfoMoveDialog
 import com.example.book.presentation.screen.book_info.data.BookInfoEvent
 import com.example.book.presentation.screen.book_info.data.BookInfoState
 import com.example.book.presentation.screen.book_info.data.BookInfoViewModel
@@ -71,6 +72,7 @@ import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.history.data.HistoryViewModel
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryViewModel
+import com.example.book.presentation.screen.book_info.components.BookInfoTopBar
 
 @Composable
 fun BookInfoScreenRoot(screen: Screen.BookInfo) {

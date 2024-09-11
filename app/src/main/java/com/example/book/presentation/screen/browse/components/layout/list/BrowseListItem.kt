@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout.list
+package com.example.book.presentation.screen.browse.components.layout.list
 
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -25,10 +25,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.components.CustomCheckbox
-import ua.acclorite.book_story.presentation.ui.FadeTransitionPreservingSpace
+import com.example.book.R
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.components.custom.CustomCheckbox
+import com.example.book.presentation.screen.browse.components.layout.list.BrowseListDirectoryItem
+import com.example.book.presentation.screen.browse.components.layout.list.BrowseListFileItem
+import com.example.book.ui.theme.FadeTransitionPreservingSpace
+
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

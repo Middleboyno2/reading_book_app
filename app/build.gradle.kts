@@ -4,6 +4,9 @@ plugins {
     id("kotlin-parcelize")
     id("kotlin-kapt")
     id("androidx.room")
+    id("com.mikepenz.aboutlibraries.plugin")
+    id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -43,6 +46,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -50,12 +54,14 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/gradle/incremental.annotation.processors"
         }
     }
 }
 
 dependencies {
     implementation(libs.androidx.material3.window.size)
+    implementation("androidx.compose.material:material:1.6.8")
 
     implementation("androidx.compose.material:material-icons-extended:1.7.0")
     // Datastore
@@ -73,11 +79,14 @@ dependencies {
     kapt("androidx.room:room-compiler:$room_version")
 
 
-    kapt("com.google.dagger:hilt-android-compiler:2.52")
+    // Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.52")
 
-    kapt("androidx.hilt:hilt-compiler:1.2.0")
+    implementation("com.google.dagger:hilt-compiler:2.52")
+
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    implementation("com.google.dagger:hilt-android-gradle-plugin:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.52")
+    kapt("androidx.hilt:hilt-compiler:1.2.0")
 
 
     implementation("io.coil-kt:coil-compose:2.2.2")
@@ -85,7 +94,9 @@ dependencies {
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
-
+    // About open source libraries
+    implementation("com.mikepenz:aboutlibraries-core:11.2.2")
+    implementation("com.mikepenz:aboutlibraries-compose-m3:11.2.2")
 
     // Splash API
     implementation("androidx.core:core-splashscreen:1.0.1")

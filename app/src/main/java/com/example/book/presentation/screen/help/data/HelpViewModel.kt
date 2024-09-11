@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.help.data
+package com.example.book.presentation.screen.help.data
 
 import android.app.SearchManager
 import android.content.Intent
@@ -6,14 +6,14 @@ import android.net.Uri
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.book.presentation.screen.help.data.HelpEvent
+import com.example.book.presentation.main.Screen
+import com.example.book.presentation.main.launchActivity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import ua.acclorite.book_story.presentation.data.Screen
-import ua.acclorite.book_story.presentation.data.launchActivity
+
 import javax.inject.Inject
 
 @HiltViewModel

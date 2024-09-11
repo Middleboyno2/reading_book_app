@@ -1,10 +1,12 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout
+package com.example.book.presentation.screen.browse.components.layout
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.screens.browse.components.layout.grid.BrowseGridItem
-import ua.acclorite.book_story.presentation.screens.browse.components.layout.list.BrowseListItem
+import com.example.book.data.model.SelectableFile
+
+import com.example.book.presentation.screen.browse.components.layout.grid.BrowseGridItem
+import com.example.book.presentation.screen.browse.components.layout.list.BrowseListItem
+
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseLayout
 import java.io.File
 

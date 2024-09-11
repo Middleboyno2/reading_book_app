@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse
+package com.example.book.presentation.screen.browse
 
 import android.Manifest
 import android.widget.Toast
@@ -23,30 +23,31 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.book.R
+import com.example.book.data.model.SelectableFile
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+import com.example.book.presentation.main.MainViewModel
+import com.example.book.presentation.main.Screen
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
 import com.google.accompanist.permissions.rememberPermissionState
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
-import com.example.book.presentation.main.MainViewModel
-import ua.acclorite.book_story.presentation.data.Screen
-import ua.acclorite.book_story.presentation.screens.browse.components.BrowseEmptyPlaceholder
-import ua.acclorite.book_story.presentation.screens.browse.components.BrowseStoragePermissionDialog
-import ua.acclorite.book_story.presentation.screens.browse.components.adding_dialog.BrowseAddingDialog
-import ua.acclorite.book_story.presentation.screens.browse.components.filter_bottom_sheet.BrowseFilterBottomSheet
-import ua.acclorite.book_story.presentation.screens.browse.components.layout.BrowseLayout
-import ua.acclorite.book_story.presentation.screens.browse.components.top_bar.BrowseTopBar
+import com.example.book.presentation.screen.browse.components.BrowseEmptyPlaceholder
+import com.example.book.presentation.screen.browse.components.BrowseStoragePermissionDialog
+import com.example.book.presentation.screen.browse.components.adding_dialog.BrowseAddingDialog
+import com.example.book.presentation.screen.browse.components.filter_bottom_sheet.BrowseFilterBottomSheet
+import com.example.book.presentation.screen.browse.components.layout.BrowseLayout
+import com.example.book.presentation.screen.browse.components.top_bar.BrowseTopBar
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.browse.data.BrowseViewModel
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryViewModel
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseFilesStructure
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
+import com.example.book.ui.theme.DefaultTransition
+
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable

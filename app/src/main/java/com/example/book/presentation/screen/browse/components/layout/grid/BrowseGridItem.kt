@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout.grid
+package com.example.book.presentation.screen.browse.components.layout.grid
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -13,7 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.domain.model.SelectableFile
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.screen.browse.components.layout.grid.BrowseGridDirectoryItem
+import com.example.book.presentation.screen.browse.components.layout.grid.BrowseGridFileItem
+
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

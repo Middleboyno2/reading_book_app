@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.history
+package com.example.book.presentation.screen.history
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.tween
@@ -37,28 +37,30 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.AnimatedTopAppBar
-import ua.acclorite.book_story.presentation.components.CategoryTitle
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.CustomSearchTextField
-import ua.acclorite.book_story.presentation.components.CustomSnackbar
-import ua.acclorite.book_story.presentation.components.MoreDropDown
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.components.is_messages.IsEmpty
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.Screen
-import ua.acclorite.book_story.presentation.screens.history.components.HistoryDeleteWholeHistoryDialog
-import ua.acclorite.book_story.presentation.screens.history.components.HistoryItem
+import com.example.book.R
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.AnimatedTopAppBar
+import com.example.book.presentation.components.custom.CategoryTitle
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.CustomIconButton
+import com.example.book.presentation.components.custom.CustomSearchTextField
+import com.example.book.presentation.components.custom.CustomSnackbar
+import com.example.book.presentation.components.custom.MoreDropDown
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.components.is_messages.IsEmpty
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.Screen
+
+import com.example.book.presentation.screen.history.components.HistoryDeleteWholeHistoryDialog
+import com.example.book.presentation.screen.history.components.HistoryItem
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.history.data.HistoryState
 import com.example.book.presentation.screen.history.data.HistoryViewModel
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryViewModel
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
-import ua.acclorite.book_story.presentation.ui.Transitions
+import com.example.book.ui.theme.DefaultTransition
+import com.example.book.ui.theme.Transitions
+
 
 @Composable
 fun HistoryScreenRoot() {

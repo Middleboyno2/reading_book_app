@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.help.components
+package com.example.book.presentation.screen.help.components
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -27,11 +27,12 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.HelpTip
-import ua.acclorite.book_story.domain.util.OnNavigate
+import com.example.book.R
+import com.example.book.data.model.HelpTip
+import com.example.book.data.util.OnNavigate
 import com.example.book.presentation.screen.help.data.HelpEvent
-import ua.acclorite.book_story.presentation.ui.SlidingTransition
+import com.example.book.ui.theme.SlidingTransition
+
 
 /**
  * Help Item.

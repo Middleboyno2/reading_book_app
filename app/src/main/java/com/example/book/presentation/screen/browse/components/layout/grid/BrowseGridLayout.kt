@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.layout.grid
+package com.example.book.presentation.screen.browse.components.layout.grid
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -10,12 +10,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.components.header
-import ua.acclorite.book_story.presentation.screens.browse.components.layout.BrowseItem
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.components.custom.header
+
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseLayout
+import com.example.book.presentation.screen.browse.components.layout.BrowseItem
 
 @Composable
 fun BrowseGridLayout(

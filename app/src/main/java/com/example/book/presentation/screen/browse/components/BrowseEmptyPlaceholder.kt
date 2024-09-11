@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components
+package com.example.book.presentation.screen.browse.components
 
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.runtime.Composable
@@ -7,17 +7,19 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import com.example.book.R
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.is_messages.IsEmpty
+import com.example.book.presentation.components.is_messages.IsError
+import com.example.book.presentation.main.Screen
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.is_messages.IsEmpty
-import ua.acclorite.book_story.presentation.components.is_messages.IsError
-import ua.acclorite.book_story.presentation.data.Screen
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
-import ua.acclorite.book_story.presentation.ui.Transitions
+import com.example.book.ui.theme.Transitions
+
 
 /**
  * Browse Empty Placeholder.

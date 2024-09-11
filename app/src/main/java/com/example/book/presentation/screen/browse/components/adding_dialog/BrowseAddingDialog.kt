@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.adding_dialog
+package com.example.book.presentation.screen.browse.components.adding_dialog
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -17,11 +17,12 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.NullableBook
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.components.custom_dialog.CustomDialogWithLazyColumn
-import ua.acclorite.book_story.presentation.data.LocalNavigator
+import com.example.book.R
+import com.example.book.data.model.NullableBook
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.components.custom_dialog.CustomDialogWithLazyColumn
+import com.example.book.presentation.main.LocalNavigator
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.library.data.LibraryEvent

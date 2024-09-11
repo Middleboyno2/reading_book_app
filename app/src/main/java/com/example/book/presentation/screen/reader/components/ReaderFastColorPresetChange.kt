@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components
+package com.example.book.presentation.screen.reader.components
 
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.runtime.Composable
@@ -6,7 +6,8 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
-import ua.acclorite.book_story.domain.util.UIText
+import com.example.book.data.util.UIText
+
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 
 /**

@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.history.components
+package com.example.book.presentation.screen.history.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -30,10 +30,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.History
-import ua.acclorite.book_story.presentation.components.CustomCoverImage
-import ua.acclorite.book_story.presentation.components.CustomIconButton
+import com.example.book.R
+import com.example.book.data.model.History
+import com.example.book.presentation.components.custom.CustomCoverImage
+import com.example.book.presentation.components.custom.CustomIconButton
+
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

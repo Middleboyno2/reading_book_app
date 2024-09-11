@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components.settings_bottom_sheet
+package com.example.book.presentation.screen.reader.components.settings_bottom_sheet
 
 import androidx.activity.ComponentActivity
 import androidx.compose.animation.animateColorAsState
@@ -22,13 +22,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.presentation.components.CustomBottomSheet
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.presentation.components.custom.CustomBottomSheet
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+import com.example.book.presentation.screen.reader.components.settings_bottom_sheet.ReaderSettingsBottomSheetTabRow
+
 import com.example.book.presentation.screen.reader.data.ReaderEvent
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 import com.example.book.presentation.screen.settings.data.SettingsState
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories.ColorsSubcategory
+import com.example.book.presentation.screen.settings.nested.appearance.components.subcategories.ColorsSubcategory
 import com.example.book.presentation.screen.settings.nested.reader.components.ReaderSettingsCategory
 
 /**

@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components.start_item
+package com.example.book.presentation.screen.reader.components.start_item
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -31,9 +31,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CustomCoverImage
+import com.example.book.R
+import com.example.book.presentation.components.custom.CustomCoverImage
+import com.example.book.presentation.screen.reader.components.start_item.ReaderStartItemBackground
 import com.example.book.presentation.screen.reader.data.ReaderState
+
 
 /**
  * Reader start item. Displays at the beginning of the book.

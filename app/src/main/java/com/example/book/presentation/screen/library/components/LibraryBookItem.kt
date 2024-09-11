@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.library.components
+package com.example.book.presentation.screen.library.components
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -31,12 +31,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.Book
-import ua.acclorite.book_story.domain.util.Selected
-import ua.acclorite.book_story.presentation.components.CustomCoverImage
-import ua.acclorite.book_story.presentation.data.removeDigits
-import ua.acclorite.book_story.presentation.data.removeTrailingZero
+import com.example.book.R
+import com.example.book.data.model.Book
+import com.example.book.data.util.Selected
+import com.example.book.presentation.components.custom.CustomCoverImage
+import com.example.book.presentation.main.removeDigits
+import com.example.book.presentation.main.removeTrailingZero
+
 
 /**
  * Library list element item.

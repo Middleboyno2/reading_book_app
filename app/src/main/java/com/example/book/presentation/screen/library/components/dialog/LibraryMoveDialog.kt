@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.library.components.dialog
+package com.example.book.presentation.screen.library.components.dialog
 
 import android.widget.Toast
 import androidx.compose.foundation.pager.PagerState
@@ -8,11 +8,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.Category
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.components.custom_dialog.CustomDialogWithLazyColumn
-import ua.acclorite.book_story.presentation.components.custom_dialog.SelectableDialogItem
+import com.example.book.R
+import com.example.book.data.model.Category
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.components.custom_dialog.CustomDialogWithLazyColumn
+import com.example.book.presentation.components.custom_dialog.SelectableDialogItem
+
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryState
@@ -60,8 +61,7 @@ fun LibraryMoveDialog(
                 val category = when (it) {
                     Category.READING -> stringResource(id = R.string.reading_tab)
                     Category.ALREADY_READ -> stringResource(id = R.string.already_read_tab)
-                    Category.PLANNING -> stringResource(id = R.string.planning_tab)
-                    Category.DROPPED -> stringResource(id = R.string.dropped_tab)
+
                 }
 
                 SelectableDialogItem(

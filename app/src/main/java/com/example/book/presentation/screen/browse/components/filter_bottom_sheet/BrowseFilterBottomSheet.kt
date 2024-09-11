@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.filter_bottom_sheet
+package com.example.book.presentation.screen.browse.components.filter_bottom_sheet
 
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -11,9 +11,10 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.State
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.presentation.components.CustomBottomSheet
-import ua.acclorite.book_story.presentation.data.MainEvent
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.presentation.components.custom.CustomBottomSheet
+import com.example.book.presentation.main.MainEvent
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.settings.nested.browse.components.subcategories.BrowseFilterSubcategory

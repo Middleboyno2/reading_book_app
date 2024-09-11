@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.help
+package com.example.book.presentation.screen.help
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -14,14 +14,12 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.RestartAlt
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.LargeTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -32,26 +30,26 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.Constants
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.GoBackButton
-import ua.acclorite.book_story.presentation.components.collapsibleUntilExitScrollBehaviorWithLazyListState
-import ua.acclorite.book_story.presentation.components.customItems
-import ua.acclorite.book_story.presentation.data.LocalNavigator
-import ua.acclorite.book_story.presentation.data.MainEvent
+import com.example.book.R
+import com.example.book.data.util.Constants
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.GoBackButton
+import com.example.book.presentation.components.custom.collapsibleUntilExitScrollBehaviorWithLazyListState
+import com.example.book.presentation.components.custom.customItems
+import com.example.book.presentation.main.LocalNavigator
+import com.example.book.presentation.main.MainEvent
+
 import com.example.book.presentation.main.MainViewModel
-import ua.acclorite.book_story.presentation.data.Screen
+import com.example.book.presentation.main.Screen
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseViewModel
-import ua.acclorite.book_story.presentation.screens.help.components.HelpItem
-import ua.acclorite.book_story.presentation.screens.help.components.items.HelpClickMeNoteItem
+import com.example.book.presentation.screen.help.components.HelpItem
+import com.example.book.presentation.screen.help.components.items.HelpClickMeNoteItem
 import com.example.book.presentation.screen.help.data.HelpEvent
-import ua.acclorite.book_story.presentation.screens.help.data.HelpState
-import ua.acclorite.book_story.presentation.screens.help.data.HelpViewModel
-import ua.acclorite.book_story.presentation.screens.start.data.StartEvent
-import ua.acclorite.book_story.presentation.screens.start.data.StartViewModel
+import com.example.book.presentation.screen.help.data.HelpState
+import com.example.book.presentation.screen.help.data.HelpViewModel
+
 
 @Composable
 fun HelpScreenRoot(screen: Screen.Help) {
@@ -59,7 +57,7 @@ fun HelpScreenRoot(screen: Screen.Help) {
     val helpViewModel: HelpViewModel = hiltViewModel()
     val browseViewModel: BrowseViewModel = hiltViewModel()
     val mainViewModel: MainViewModel = hiltViewModel()
-    val startViewModel: StartViewModel = hiltViewModel()
+//    val startViewModel: StartViewModel = hiltViewModel()
 
     val state = helpViewModel.state.collectAsState()
 
@@ -72,8 +70,8 @@ fun HelpScreenRoot(screen: Screen.Help) {
         onNavigate = { navigator.it() },
         onEvent = helpViewModel::onEvent,
         onMainEvent = mainViewModel::onEvent,
-        onBrowseEvent = browseViewModel::onEvent,
-        onStartEvent = startViewModel::onEvent
+        onBrowseEvent = browseViewModel::onEvent
+//        onStartEvent = startViewModel::onEvent
     )
 }
 
@@ -87,7 +85,7 @@ private fun HelpScreen(
     onEvent: (HelpEvent) -> Unit,
     onMainEvent: (MainEvent) -> Unit,
     onBrowseEvent: (BrowseEvent) -> Unit,
-    onStartEvent: (StartEvent) -> Unit
+//    onStartEvent: (StartEvent) -> Unit
 ) {
     val scrollState = TopAppBarDefaults.collapsibleUntilExitScrollBehaviorWithLazyListState()
 
@@ -98,7 +96,7 @@ private fun HelpScreen(
             .windowInsetsPadding(WindowInsets.navigationBars),
         containerColor = MaterialTheme.colorScheme.surface,
         topBar = {
-            LargeTopAppBar(
+            TopAppBar(
                 title = {
                     Text(stringResource(id = R.string.help_screen))
                 },
@@ -108,23 +106,23 @@ private fun HelpScreen(
                     }
                 },
                 actions = {
-                    if (!state.value.fromStart) {
-                        CustomIconButton(
-                            icon = Icons.Default.RestartAlt,
-                            contentDescription = R.string.reset_start_content_desc,
-                            disableOnClick = false
-                        ) {
-                            onStartEvent(StartEvent.OnResetStartScreen)
-                            onMainEvent(MainEvent.OnChangeShowStartScreen(true))
-                            onNavigate {
-                                navigate(Screen.Start, saveInBackStack = false)
-                                clearBackStack()
-                            }
-                        }
-                    }
+//                    if (!state.value.fromStart) {
+//                        CustomIconButton(
+//                            icon = Icons.Default.RestartAlt,
+//                            contentDescription = R.string.reset_start_content_desc,
+//                            disableOnClick = false
+//                        ) {
+//                            onStartEvent(StartEvent.OnResetStartScreen)
+//                            onMainEvent(MainEvent.OnChangeShowStartScreen(true))
+//                            onNavigate {
+//                                navigate(Screen.Start, saveInBackStack = false)
+//                                clearBackStack()
+//                            }
+//                        }
+//                    }
                 },
                 scrollBehavior = scrollState.first,
-                colors = TopAppBarDefaults.largeTopAppBarColors(
+                colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.surface,
                     scrolledContainerColor = MaterialTheme.colorScheme.surfaceContainer
                 )

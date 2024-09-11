@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components
+package com.example.book.presentation.screen.reader.components
 
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -28,10 +28,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.Category
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.data.Screen
+import com.example.book.R
+import com.example.book.data.model.Category
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.main.Screen
+
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.reader.data.ReaderEvent

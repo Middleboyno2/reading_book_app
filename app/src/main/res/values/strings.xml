@@ -3,7 +3,7 @@
 
     <!-- Basic Strings -->
     <string name="app_version" translatable="false">1.0.0</string>
-    <string name="app_name" translatable="false">Book\'s Story</string>
+    <string name="app_name" translatable="false">Your Book\'s</string>
 
     <string-array name="book_sites">
         <item>Anna\'s Archive|https://www.annas-archive.org</item>
@@ -33,36 +33,7 @@
 
 
 
-    <!-- Dialog Descriptions -->
-    <string name="storage_permission_description">
-        We need storage permission to scan Your Device for books.
-        Without this permission, you will not be able to add a book.
-    </string>
-    <string name="add_books_description">
-        You can choose which books you want to add.
-        You can edit Title and Cover image of the book later.
-        The loading process can take up to several minutes.
-    </string>
-    <string name="move_books_description">
-        Choose the category to which you want to move all the selected books(%1$s).
-        All selected books will be moved to the selected category.
-    </string>
-    <string name="delete_books_description">
-        It will delete all selected books(%1$s) from the database.
-        It will not delete selected books from your device.
-    </string>
-    <string name="delete_book_description">
-        It will delete this book from the database.
-        It will not delete this book from your device.
-    </string>
-    <string name="move_book_description">
-        Choose the category to which you want to move this book.
-        This book will be moved to the selected category.
-    </string>
-    <string name="delete_history_description">
-        It will delete the whole history from the database.
-        After deleting the whole history, the order of the books will be reset.
-    </string>
+
 
 
     <!-- Settings options -->
@@ -94,6 +65,19 @@
     <string name="browse_pin_favorite_directories_option">Pin favorite directories</string>
     <string name="browse_pin_favorite_directories_option_desc">
         Pin your favorite directories to the top of the screen
+    </string>
+
+
+
+
+    <!-- About sites -->
+
+
+    <string name="issues_page" translatable="false">
+        https://github.com/Middleboyno2/
+    </string>
+    <string name="support_page" translatable="false">
+        https://www.google.com
     </string>
 
 
@@ -397,9 +381,62 @@
 
 
 
+    <!-- Tabs -->
+    <string name="reading_tab">Reading</string>
+    <string name="already_read_tab">Already Read</string>
+    <string name="planning_tab">Planning</string>
+    <string name="dropped_tab">Dropped</string>
+    <string name="general_tab">General</string>
+    <string name="color_tab">Colors</string>
+    <string name="filter_tab">Filter</string>
+    <string name="sort_tab">Sort</string>
 
-
-
+    <!-- Dialog Descriptions -->
+    <string name="storage_permission_description">
+        We need storage permission to scan Your Device for books.
+        Without this permission, you will not be able to add a book.
+    </string>
+    <string name="add_books_description">
+        You can choose which books you want to add.
+        You can edit Title and Cover image of the book later.
+        The loading process can take up to several minutes.
+    </string>
+    <string name="move_books_description">
+        Choose the category to which you want to move all the selected books(%1$s).
+        All selected books will be moved to the selected category.
+    </string>
+    <string name="delete_books_description">
+        It will delete all selected books(%1$s) from the database.
+        It will not delete selected books from your device.
+    </string>
+    <string name="delete_book_description">
+        It will delete this book from the database.
+        It will not delete this book from your device.
+    </string>
+    <string name="move_book_description">
+        Choose the category to which you want to move this book.
+        This book will be moved to the selected category.
+    </string>
+    <string name="delete_history_description">
+        It will delete the whole history from the database.
+        After deleting the whole history, the order of the books will be reset.
+    </string>
+    <string name="confirm_update_description">
+        By confirming this book\'s text will be updated.
+        Please remember where you left before updating text.
+    </string>
+    <string name="update_app_description">
+        New version of Book\'s Story was found.
+        Do you want to download it?
+        By clicking the «Download» button you will be transferred
+        to your browser and download the latest update automatically.
+    </string>
+    <string name="enable_check_for_updates_description">
+        By enabling «Check for updates»
+        the app will retrieve latest release information from «api.github.com» each time
+        when app starts.
+        Do you want to proceed and enable «Check for updates»?
+    </string>
 
     <!-- Help -->
     <string name="help_clickable_note_1">Please note, that</string>

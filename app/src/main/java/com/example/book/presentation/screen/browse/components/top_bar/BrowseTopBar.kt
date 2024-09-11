@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.top_bar
+package com.example.book.presentation.screen.browse.components.top_bar
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.animateColorAsState
@@ -32,14 +32,15 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.SelectableFile
-import ua.acclorite.book_story.presentation.components.AnimatedTopAppBar
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.CustomSearchTextField
-import ua.acclorite.book_story.presentation.components.MoreDropDown
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.data.model.SelectableFile
+import com.example.book.presentation.components.custom.AnimatedTopAppBar
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.CustomIconButton
+import com.example.book.presentation.components.custom.CustomSearchTextField
+import com.example.book.presentation.components.custom.MoreDropDown
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseFilesStructure

@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components
+package com.example.book.presentation.screen.browse.components
 
 import androidx.activity.ComponentActivity
 import androidx.compose.material.icons.Icons
@@ -6,10 +6,11 @@ import androidx.compose.material.icons.filled.SdStorage
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import com.example.book.R
+import com.example.book.presentation.components.custom_dialog.CustomDialogWithContent
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.PermissionState
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.custom_dialog.CustomDialogWithContent
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 
 /**

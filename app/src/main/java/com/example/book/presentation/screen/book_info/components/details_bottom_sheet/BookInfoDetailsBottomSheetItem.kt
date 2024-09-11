@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.book_info.components.details_bottom_sheet
+package com.example.book.presentation.screen.book_info.components.details_bottom_sheet
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable

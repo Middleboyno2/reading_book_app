@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.history.components
+package com.example.book.presentation.screen.history.components
 
 import android.widget.Toast
 import androidx.compose.material.icons.Icons
@@ -6,8 +6,9 @@ import androidx.compose.material.icons.outlined.DeleteOutline
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.custom_dialog.CustomDialogWithContent
+import com.example.book.R
+import com.example.book.presentation.components.custom_dialog.CustomDialogWithContent
+
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.library.data.LibraryEvent
 

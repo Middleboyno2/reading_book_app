@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.filter_bottom_sheet
+package com.example.book.presentation.screen.browse.components.filter_bottom_sheet
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.pager.PagerState
@@ -11,7 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import ua.acclorite.book_story.R
+import com.example.book.R
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 
 /**

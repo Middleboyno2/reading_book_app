@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.help.data
+package com.example.book.presentation.screen.help.data
 
 import androidx.compose.runtime.Immutable
 

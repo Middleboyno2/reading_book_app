@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.browse.components.top_bar
+package com.example.book.presentation.screen.browse.components.top_bar
 
 import android.os.Environment
 import androidx.compose.animation.animateColorAsState
@@ -26,10 +26,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.customItemsIndexed
-import ua.acclorite.book_story.presentation.data.MainState
+import com.example.book.R
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.customItemsIndexed
+import com.example.book.presentation.main.MainState
+
 import com.example.book.presentation.screen.browse.data.BrowseEvent
 import com.example.book.presentation.screen.browse.data.BrowseState
 import com.example.book.presentation.screen.settings.nested.browse.data.BrowseFilesStructure

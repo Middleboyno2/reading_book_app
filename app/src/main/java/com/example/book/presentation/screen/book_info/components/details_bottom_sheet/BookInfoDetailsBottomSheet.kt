@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.book_info.components.details_bottom_sheet
+package com.example.book.presentation.screen.book_info.components.details_bottom_sheet
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Spacer
@@ -11,10 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.CustomBottomSheet
+import com.example.book.R
+import com.example.book.presentation.components.custom.CustomBottomSheet
+
 import com.example.book.presentation.screen.book_info.data.BookInfoEvent
 import com.example.book.presentation.screen.book_info.data.BookInfoState
+
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date

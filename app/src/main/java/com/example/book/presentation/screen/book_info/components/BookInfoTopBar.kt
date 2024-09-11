@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.book_info.components
+package com.example.book.presentation.screen.book_info.components
 
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeOut
@@ -19,18 +19,19 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.util.OnNavigate
-import ua.acclorite.book_story.presentation.components.AnimatedTopAppBar
-import ua.acclorite.book_story.presentation.components.CustomAnimatedVisibility
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.GoBackButton
+import com.example.book.R
+import com.example.book.data.util.OnNavigate
+import com.example.book.presentation.components.custom.AnimatedTopAppBar
+import com.example.book.presentation.components.custom.CustomAnimatedVisibility
+import com.example.book.presentation.components.custom.CustomIconButton
+import com.example.book.presentation.components.custom.GoBackButton
+
 import com.example.book.presentation.screen.book_info.data.BookInfoEvent
 import com.example.book.presentation.screen.book_info.data.BookInfoState
 import com.example.book.presentation.screen.history.data.HistoryEvent
 import com.example.book.presentation.screen.library.data.LibraryEvent
-import ua.acclorite.book_story.presentation.ui.DefaultTransition
-import ua.acclorite.book_story.presentation.ui.Transitions
+import com.example.book.ui.theme.DefaultTransition
+import com.example.book.ui.theme.Transitions
 
 /**
  * Book Info Top Bar.

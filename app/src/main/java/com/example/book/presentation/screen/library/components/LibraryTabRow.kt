@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.library.components
+package com.example.book.presentation.screen.library.components
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.background
@@ -24,9 +24,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.domain.model.CategorizedBooks
-import ua.acclorite.book_story.domain.model.Category
+import com.example.book.R
+import com.example.book.data.model.CategorizedBooks
+import com.example.book.data.model.Category
+
 import com.example.book.presentation.screen.library.data.LibraryEvent
 
 /**
@@ -54,14 +55,6 @@ fun LibraryTabRow(
             Pair(
                 context.getString(R.string.already_read_tab),
                 books.find { it.category == Category.ALREADY_READ }?.books?.size ?: 0
-            ),
-            Pair(
-                context.getString(R.string.planning_tab),
-                books.find { it.category == Category.PLANNING }?.books?.size ?: 0
-            ),
-            Pair(
-                context.getString(R.string.dropped_tab),
-                books.find { it.category == Category.DROPPED }?.books?.size ?: 0
             )
         )
     }

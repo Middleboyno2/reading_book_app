@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.library.components
+package com.example.book.presentation.screen.library.components
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.Spring
@@ -31,11 +31,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ua.acclorite.book_story.R
-import ua.acclorite.book_story.presentation.components.AnimatedTopAppBar
-import ua.acclorite.book_story.presentation.components.CustomIconButton
-import ua.acclorite.book_story.presentation.components.CustomSearchTextField
-import ua.acclorite.book_story.presentation.components.MoreDropDown
+import com.example.book.R
+import com.example.book.presentation.components.custom.AnimatedTopAppBar
+import com.example.book.presentation.components.custom.CustomIconButton
+import com.example.book.presentation.components.custom.CustomSearchTextField
+import com.example.book.presentation.components.custom.MoreDropDown
+
 import com.example.book.presentation.screen.library.data.LibraryEvent
 import com.example.book.presentation.screen.library.data.LibraryState
 

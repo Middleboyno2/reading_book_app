@@ -1,4 +1,4 @@
-package ua.acclorite.book_story.presentation.screens.reader.components.start_item
+package com.example.book.presentation.screen.reader.components.start_item
 
 import android.net.Uri
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import ua.acclorite.book_story.presentation.components.CustomCoverImage
+import com.example.book.presentation.components.custom.CustomCoverImage
 
 /**
  * Background of the [ReaderStartItem].
