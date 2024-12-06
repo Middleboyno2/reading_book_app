@@ -49,7 +49,7 @@ data class MainState(
     val paragraphHeight: Int? = null,
     val paragraphIndentation: Boolean? = null,
     val showStartScreen: Boolean? = null,
-    val checkForUpdates: Boolean? = null,
+
     val sidePadding: Int? = null,
     val doubleClickTranslation: Boolean? = null,
     val fastColorPresetChange: Boolean? = null,
@@ -111,8 +111,7 @@ data class MainState(
                 val paragraphIndentation: Boolean = data[PARAGRAPH_INDENTATION.name] as? Boolean
                     ?: false
 
-                val checkForUpdates: Boolean = data[CHECK_FOR_UPDATES.name] as? Boolean
-                    ?: false
+
 
                 val sidePadding: Int = data[SIDE_PADDING.name] as? Int
                     ?: 6
@@ -171,7 +170,6 @@ data class MainState(
                     lineHeight = lineHeight,
                     paragraphHeight = paragraphHeight,
                     paragraphIndentation = paragraphIndentation,
-                    checkForUpdates = checkForUpdates,
                     sidePadding = sidePadding,
                     doubleClickTranslation = doubleClickTranslation,
                     fastColorPresetChange = fastColorPresetChange,

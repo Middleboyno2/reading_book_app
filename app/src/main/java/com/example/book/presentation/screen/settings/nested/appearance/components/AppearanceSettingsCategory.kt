@@ -15,7 +15,7 @@ import com.example.book.presentation.main.MainState
 import com.example.book.presentation.screen.settings.data.SettingsEvent
 import com.example.book.presentation.screen.settings.data.SettingsState
 import com.example.book.presentation.screen.settings.nested.appearance.components.subcategories.ColorsSubcategory
-import ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories.ThemePreferencesSubcategory
+import com.example.book.presentation.screen.settings.nested.appearance.components.subcategories.ThemePreferencesSubcategory
 
 /**
  * Appearance Settings Category.

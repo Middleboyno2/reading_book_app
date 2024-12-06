@@ -7,6 +7,7 @@ import com.example.book.data.dto.BookEntity
 import com.example.book.data.dto.ColorPresetEntity
 import com.example.book.data.dto.FavoriteDirectoryEntity
 import com.example.book.data.dto.HistoryEntity
+import com.example.book.data.dto.NoteEntity
 
 @Database(
     entities = [
@@ -14,6 +15,7 @@ import com.example.book.data.dto.HistoryEntity
         HistoryEntity::class,
         ColorPresetEntity::class,
         FavoriteDirectoryEntity::class,
+        NoteEntity::class
     ],
     version = 1,
 

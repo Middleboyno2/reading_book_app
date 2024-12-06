@@ -16,7 +16,7 @@ sealed class MainEvent {
     data class OnChangeParagraphHeight(val paragraphHeight: Int) : MainEvent()
     data class OnChangeParagraphIndentation(val bool: Boolean) : MainEvent()
     data class OnChangeShowStartScreen(val bool: Boolean) : MainEvent()
-    data class OnChangeCheckForUpdates(val bool: Boolean) : MainEvent()
+
     data class OnChangeSidePadding(val sidePadding: Int) : MainEvent()
     data class OnChangeDoubleClickTranslation(val bool: Boolean) : MainEvent()
     data class OnChangeFastColorPresetChange(val bool: Boolean) : MainEvent()

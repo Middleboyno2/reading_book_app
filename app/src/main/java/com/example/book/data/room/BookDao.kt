@@ -11,6 +11,7 @@ import com.example.book.data.dto.BookEntity
 import com.example.book.data.dto.ColorPresetEntity
 import com.example.book.data.dto.FavoriteDirectoryEntity
 import com.example.book.data.dto.HistoryEntity
+import com.example.book.data.dto.NoteEntity
 
 @Dao
 interface BookDao {
@@ -89,4 +90,22 @@ interface BookDao {
 
     @Delete
     suspend fun deleteFavoriteDirectory(favoriteDirectoryEntity: FavoriteDirectoryEntity)
+
+
+
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertNote(note: List<NoteEntity>)
+
+    @Update
+    suspend fun updateNote(note: List<NoteEntity>)
+
+    @Delete
+    suspend fun deleteNote(note: List<NoteEntity>)
+
+    @Query("SELECT * FROM NoteEntity WHERE id = :id")
+    suspend fun getNoteById(id: Long): NoteEntity
+
+    @Query("SELECT * FROM NoteEntity")
+    suspend fun getAllNotes(): List<NoteEntity>
 }

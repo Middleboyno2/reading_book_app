@@ -110,17 +110,7 @@ fun LazyItemScope.ThemeSetting(
     }
 }
 
-/**
- * Theme Setting item.
- * Used to switch between different themes.
- *
- * @param theme Target [Theme].
- * @param darkTheme Whether should be shown in Dark Theme.
- * @param isPureDark Whether should be shown in Pure Dark.
- * @param themeContrast [ThemeContrast].
- * @param selected True if this theme is currently selected.
- * @param onClick OnClick callback.
- */
+
 @Composable
 private fun ThemeSettingItem(
     theme: Pair<Theme, UIText>,

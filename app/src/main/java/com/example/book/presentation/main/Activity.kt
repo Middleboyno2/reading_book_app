@@ -39,6 +39,7 @@ import com.example.book.presentation.screen.settings.nested.appearance.Appearanc
 import com.example.book.presentation.screen.settings.nested.browse.BrowseSettingsRoot
 import com.example.book.presentation.screen.settings.nested.general.GeneralSettingsRoot
 import com.example.book.presentation.screen.settings.nested.reader.ReaderSettingsRoot
+import com.example.book.presentation.screen.start.StartScreenRoot
 import com.example.book.ui.theme.BookStoryTheme
 import com.example.book.ui.theme.Transitions
 import com.example.book.ui.theme.isDark
@@ -203,10 +204,10 @@ class Activity : AppCompatActivity() {
                             HelpScreenRoot(it)
                         }
 
-//                        // Start screen
-//                        composable<Screen.Start>(enterAnim = Transitions.FadeTransitionIn) {
-//                            StartScreenRoot()
-//                        }
+                        // Start screen
+                        composable<Screen.Start>(enterAnim = Transitions.FadeTransitionIn) {
+                            StartScreenRoot()
+                        }
                     }
                 }
             }

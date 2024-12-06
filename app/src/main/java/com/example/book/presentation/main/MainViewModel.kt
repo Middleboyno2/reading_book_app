@@ -189,16 +189,6 @@ class MainViewModel @Inject constructor(
                 }
             }
 
-            is MainEvent.OnChangeCheckForUpdates -> {
-                viewModelScope.launch(Dispatchers.IO) {
-                    setDatastore.execute(DataStoreConstants.CHECK_FOR_UPDATES, event.bool)
-                    updateStateWithSavedHandle {
-                        it.copy(
-                            checkForUpdates = event.bool
-                        )
-                    }
-                }
-            }
 
             is MainEvent.OnChangeSidePadding -> {
                 viewModelScope.launch(Dispatchers.IO) {

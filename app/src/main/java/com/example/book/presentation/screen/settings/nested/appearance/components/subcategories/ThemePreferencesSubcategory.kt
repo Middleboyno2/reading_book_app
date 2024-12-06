@@ -1,6 +1,6 @@
 @file:Suppress("FunctionName")
 
-package ua.acclorite.book_story.presentation.screens.settings.nested.appearance.components.subcategories
+package com.example.book.presentation.screen.settings.nested.appearance.components.subcategories
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

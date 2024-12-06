@@ -34,7 +34,7 @@ object Constants {
     // Supported languages
     val LANGUAGES = listOf(
         Pair("en", "English"),
-        Pair("uk", "Українська"),
+        Pair("vn", "Việt Nam")
     )
 
     // Navigation items for NavigationBars.

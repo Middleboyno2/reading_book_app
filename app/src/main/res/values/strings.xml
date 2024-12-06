@@ -307,6 +307,38 @@
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
 
+
+
+
+
+
+
+
+    <!-- Start -->
+    <string name="start_welcome">Welcome to Book\'s Story!</string>
+    <string name="start_welcome_desc">
+        To a world where words charm,
+        teach and lead on incredible adventures!
+        Let\'s set some things up!
+    </string>
+    <string name="start_language_preferences">Language preferences</string>
+    <string name="start_theme_preferences">Theme preferences</string>
+    <string name="start_permissions_preferences">Permissions</string>
+    <string name="start_permissions_granted">Granted</string>
+    <string name="start_permissions_storage">Storage permission</string>
+    <string name="start_permissions_storage_desc">Required to scan your device and find books</string>
+    <string name="start_permissions_notifications">Notifications permission</string>
+    <string name="start_permissions_notifications_desc">Required to check for newer app version</string>
+    <string name="start_done">Everything\'s done!</string>
+    <string name="start_done_desc">
+        You\'re successfully done basic setting of the app.
+        Would you like to learn how to use the app by reading Help screen?
+    </string>
+
+
+
+
+
     <!-- Content description -->
     <string name="refresh_book_content_desc">Refresh book</string>
     <string name="continue_reading_content_desc">Continue reading</string>
